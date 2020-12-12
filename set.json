@@ -1,0 +1,27 @@
+{
+    "grf": {
+        "author_id": "TWF",
+        "grf_id": 9,
+        "name": "Timberwolf's Roads (alpha)",
+        "description": "A 2x zoom road set featuring multiple types of road and tram rails",
+        "min_compat_version": 1,
+        "filename": "timberwolfs_roads.nml",
+        "language": "english", 
+        "parameters": []
+    },
+    "static_templates": [
+        {
+            "template":  "templates/static/layouts.nml"
+        }
+    ],
+    "sprites": {
+        "table": "table.csv",
+        "template_directory": "templates",
+        "globals": {
+            "bpp": "8"
+        }
+    },
+    "fixed_strings": {
+        "STR_FOO": "foo"
+    }
+}

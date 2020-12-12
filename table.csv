@@ -1,0 +1,3 @@
+name,id,numeric_id,sort_order,template,road_type,depot_type,construction_cost,maintenance_cost
+Tarmac Road,tarmac,1,5,roadtype,BORF,depot,8,16
+Template,tmpl,2,10,roadtype,TEMP,depot,8,16

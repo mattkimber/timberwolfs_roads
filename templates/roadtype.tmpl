@@ -1,0 +1,27 @@
+// Spritesets
+spriteset({{.id}}_underlay, "sheets_1x/{{.id}}_8bpp.png") {
+    tmpl_underlay(1)
+}
+
+alternative_sprites({{.id}}_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.id}}_8bpp.png") {
+    tmpl_underlay(2)
+}
+
+// Roadtype Definition
+item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
+    property {
+        label: "{{.road_type}}"; 
+
+        introduction_date: date(1940,1,1);
+        
+        construction_cost: {{.construction_cost}};
+        maintenance_cost: {{.maintenance_cost}};
+        
+        sort_order: {{.sort_order}};
+        name: {{.name_string}};
+    }
+
+    graphics {
+        underlay: {{.id}}_underlay;
+    }
+}

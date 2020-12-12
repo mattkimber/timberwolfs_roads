@@ -1,0 +1,13 @@
+{
+    "files": [
+        "*.vox"
+    ],
+    "operations": [
+        {
+            "name": "_slope",
+            "type": "stairstep",
+            "x_steps": 5.625,
+            "z_steps": 1
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+// Ground and slope tiles
+template ground_tile(x, y, m) { [x*m, (y+8)*m, 64*m, 31*m, -31*m, (m/2)] }
+template ground_tile_slope(x, y, m, o) { [x*m, y*m, 64*m, 39*m, (o-31)*m, (-7*m)-(m/2)-(m == 1 ? 1 : 0)] }
+
+// 1 direction tile
+template tmpl_1_dir_y_m(y,m) {
+    ground_tile(0, y, m)
+}
+
+// 2 direction tile
+template tmpl_2_dir_y_m(y,m) {
+    ground_tile(0, y, m)
+    ground_tile(72, y, m)
+}
+
+// 4 direction tile
+template tmpl_4_dir_junction_y_m(y,m) {
+    ground_tile(0, y, m)
+    ground_tile(72, y, m)
+    ground_tile(144, y, m)
+    ground_tile(216, y, m)
+}
+
+// 4 direction tile with swapped directions (curves/ends)
+template tmpl_4_dir_curve_y_m(y,m) {
+    ground_tile(0, y, m)
+    ground_tile(216, y, m)
+    ground_tile(144, y, m)
+    ground_tile(72, y, m)
+}
+
+// 4 directions of slopes
+template tmpl_slope_y_m(y, m) {
+    ground_tile_slope(216, y, m, 1)
+    ground_tile_slope(144, y, m, -1)
+    ground_tile_slope(72, y, m, 1)
+    ground_tile_slope(0, y, m, -1)
+}
+
+// Underlay (19 tiles)
+// 2x straight
+// 1x crossroad
+// 4x junction
+// 4x curve
+// 4x slope
+// 4x end pieces
+template tmpl_underlay(m) {
+    tmpl_2_dir_y_m(0,m)
+    tmpl_1_dir_y_m(43,m)
+    tmpl_4_dir_junction_y_m(172,m)
+    tmpl_4_dir_curve_y_m(86,m)
+    tmpl_slope_y_m(258, m)
+    tmpl_4_dir_curve_y_m(129,m)  
+}
