@@ -1,6 +1,7 @@
 // Ground and slope tiles
-template ground_tile(x, y, m) { [x*m, (y+8)*m, 64*m, 31*m, -31*m, (m/2)] }
-template ground_tile_slope(x, y, m, o) { [x*m, y*m, 64*m, 39*m, (o-31)*m, (-7*m)-(m/2)-(m == 1 ? 1 : 0)] }
+template ground_tile(x, y, m) { [x*m, (y+8)*m, 64*m, 31*m, -31*m, (m/2)+(m == 1 ? 1 : 0)] }
+template ground_tile_offset(x, y, m,o) { [x*m, (y+8)*m, 64*m, 31*m, (o-31)*m, (m/2)+(m == 1 ? 1 : 0)] }
+template ground_tile_slope(x, y, m, o) { [x*m, y*m, 64*m, 39*m, (o-31)*m, (-7*m)-(m/2)] }
 
 // 1 direction tile
 template tmpl_1_dir_y_m(y,m) {
@@ -29,6 +30,14 @@ template tmpl_4_dir_curve_y_m(y,m) {
     ground_tile(72, y, m)
 }
 
+// 4 direction tile with offsets for roadstops
+template tmpl_4_dir_roadstop_y_m(y,m) {
+    ground_tile_offset(0, y, m, -1)
+    ground_tile_offset(216, y, m, 1)
+    ground_tile_offset(144, y, m, 1)
+    ground_tile_offset(72, y, m, -1)
+}
+
 // 4 directions of slopes
 template tmpl_slope_y_m(y, m) {
     ground_tile_slope(216, y, m, 1)
@@ -51,4 +60,17 @@ template tmpl_underlay(m) {
     tmpl_4_dir_curve_y_m(86,m)
     tmpl_slope_y_m(258, m)
     tmpl_4_dir_curve_y_m(129,m)  
+}
+
+// Roadstop (4 tiles)
+template tmpl_roadstop(m) {
+    tmpl_4_dir_roadstop_y_m(215,m)
+}
+
+// Bridge surfaces (6 tiles)
+// 2x flat straight
+// 4x slope
+template tmpl_bridge_surfaces(m) {
+    tmpl_2_dir_y_m(301,m)
+    tmpl_slope_y_m(344, m)
 }

@@ -1,3 +1,7 @@
-name,id,numeric_id,sort_order,template,road_type,depot_type,construction_cost,maintenance_cost
-Tarmac Road,tarmac,1,5,roadtype,BORF,depot,8,16
-Template,tmpl,2,10,roadtype,TEMP,depot,8,16
+name,id,spriteset,numeric_id,sort_order,template,road_type,depot_type,construction_cost,maintenance_cost,speed_limit,intro_year
+Sprites,spr_a_road,a_road,-1,,spriteset,,,,,,
+Sprites,spr_tmpl,tmpl,-1,,spriteset,,,,,,
+Sprites,spr_town,town,-1,,spriteset,,,,,,
+A Road,a_road,a_road,1,5,roadtype,A_RD,depot,8,16,60,1940
+Template,tmpl,tmpl,2,10,roadtype,TMPL,depot,8,16,,1800
+Town Road,town,town,3,15,roadtype,TOWN,depot,8,16,30,1950

@@ -20,13 +20,13 @@
     { 
       "angle": 135,
       "width": 64,
-      "offset_y": -2,
+      "offset_y": -1,
       "flip": true
     },
     { 
       "angle": 45,
       "width": 64,
-      "offset_y": -2,
+      "offset_y": -1,
       "flip": true
     }
   ]

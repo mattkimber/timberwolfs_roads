@@ -1,6 +1,16 @@
 ##grflangid 0x01
 STR_GRF_NAME :Timberwolf's Roads (alpha)
 STR_GRF_DESCRIPTION :A 2x zoom road set featuring multiple types of road and tram rails
+STR_MENU_TMPL :Template Road construction
+STR_TOOLBAR_TMPL :Template Road Construction
 STR_FOO :foo
-STR_NAME_TARMAC :Tarmac Road
+STR_MENU_A_RD :A Road construction
+STR_TOOLBAR_A_RD :A Road Construction
+STR_MENU_TOWN :Town Road construction
+STR_TOOLBAR_TOWN :Town Road Construction
+STR_NAME_SPR_A_ROAD :Sprites
+STR_NAME_SPR_TMPL :Sprites
+STR_NAME_SPR_TOWN :Sprites
+STR_NAME_A_ROAD :A Road
 STR_NAME_TMPL :Template
+STR_NAME_TOWN :Town Road

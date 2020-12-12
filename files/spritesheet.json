@@ -1,8 +1,9 @@
 [
   {
     "prefixes": [
-    "tarmac",
-    "tmpl"
+    "a_road",
+    "tmpl",
+    "town"
     ],
 	"suffixes": [
 		"8bpp"

@@ -22,6 +22,12 @@
         }
     },
     "fixed_strings": {
-        "STR_FOO": "foo"
+        "STR_FOO": "foo",
+        "STR_MENU_A_RD": "A Road construction",
+        "STR_TOOLBAR_A_RD": "A Road Construction",
+        "STR_MENU_TOWN": "Town Road construction",
+        "STR_TOOLBAR_TOWN": "Town Road Construction",
+        "STR_MENU_TMPL": "Template Road construction",
+        "STR_TOOLBAR_TMPL": "Template Road Construction"
     }
 }
