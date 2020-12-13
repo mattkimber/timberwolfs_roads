@@ -1,9 +1,9 @@
-name,id,spriteset,numeric_id,sort_order,template,road_type,depot_type,construction_cost,maintenance_cost,speed_limit,intro_year
-Sprites,spr_a_road,a_road,-1,,spriteset,,,,,,
-Sprites,spr_tmpl,tmpl,-1,,spriteset,,,,,,
-Sprites,spr_town,town,-1,,spriteset,,,,,,
-Sprites,spr_sett_road,sett_road,-1,,spriteset,,,,,,
-A Road,a_road,a_road,1,5,roadtype,A_RD,depot,8,16,60,1940
-Template,tmpl,tmpl,2,10,roadtype,TMPL,depot,8,16,,1800
-Town Road,town,town,3,15,roadtype,TOWN,depot,8,16,30,1950
-Sett Road,sett_road,sett_road,4,20,roadtype,ROAD,depot,8,16,25,1820
+name,id,spriteset,numeric_id,sort_order,template,road_type,depot_type,construction_cost,maintenance_cost,speed_limit,intro_year,compatibility,flags
+Sprites,spr_a_road,a_road,-1,,spriteset,,,,,,,,
+Sprites,spr_track,track,-1,,spriteset,,,,,,,,
+Sprites,spr_town,town,-1,,spriteset,,,,,,,,
+Sprites,spr_sett_road,sett_road,-1,,spriteset,,,,,,,,
+Track,track,track,1,5,roadtype,DIRT,depot,8,16,12.5,0,,TOWN_BUILD
+Sett Road,sett_road,sett_road,2,10,roadtype,ROAD,depot,8,16,25,1820,"A_RD,TOWN,DIRT",TOWN_BUILD
+Town Road,town,town,3,15,roadtype,TOWN,depot,8,16,30,1950,A_RD,TOWN_BUILD
+A Road,a_road,a_road,4,20,roadtype,A_RD,depot,8,16,60,1940,,NO_HOUSES
