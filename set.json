@@ -28,6 +28,8 @@
         "STR_MENU_TOWN": "Town Road construction",
         "STR_TOOLBAR_TOWN": "Town Road Construction",
         "STR_MENU_TMPL": "Template Road construction",
-        "STR_TOOLBAR_TMPL": "Template Road Construction"
+        "STR_TOOLBAR_TMPL": "Template Road Construction",
+        "STR_MENU_ROAD": "Sett Road construction",
+        "STR_TOOLBAR_ROAD": "Sett Road Construction"
     }
 }

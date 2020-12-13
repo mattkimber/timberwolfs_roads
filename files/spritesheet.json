@@ -3,7 +3,8 @@
     "prefixes": [
     "a_road",
     "tmpl",
-    "town"
+    "town",
+	"sett_road"
     ],
 	"suffixes": [
 		"8bpp"
