@@ -1,0 +1,31 @@
+// Tramtype Definition
+item(FEAT_TRAMTYPES, {{.id}}, {{.numeric_id}}) {
+    property {
+        label: "{{.road_type}}"; 
+        
+        {{if .intro_year}}introduction_date: date({{.intro_year}},1,1);{{end}}
+
+        name: {{.name_string}};
+
+        toolbar_caption: string(STR_TOOLBAR_{{.road_type}});
+        menu_text: string(STR_MENU_{{.road_type}});
+
+        // build_window_caption, autoreplace_text and new_engine_text stay as default
+
+        {{if .compatibility}}powered_tramtype_list: [ {{ range $idx, $element := slice .compatibility -}}{{if ne $idx 0}},{{end}}"{{$element}}"{{end}}];{{end}}
+
+        {{if .flags}}tramtype_flags: bitmask({{ range $idx, $element := slice .flags -}}{{if ne $idx 0}},{{end}}TRAMTYPE_FLAG_{{$element}}{{end}});{{end}}
+
+        construction_cost: {{.construction_cost}};
+        maintenance_cost: {{.maintenance_cost}};
+
+        {{if .speed_limit}}speed_limit: {{.speed_limit}} mph;{{end}}
+        
+        sort_order: {{.sort_order}};
+    }
+
+    graphics {
+        track_overlay: {{.spriteset}}_overlay;
+        underlay: town_underlay;
+    }
+}

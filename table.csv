@@ -6,6 +6,7 @@ Sprites,spr_concrete,concrete,-1,,spriteset,,,,,,,,
 Sprites,spr_town,town,-1,,spriteset,,,,,,,,
 Sprites,spr_sett_road,sett_road,-1,,spriteset,,,,,,,,
 Sprites,spr_motorway,motorway,-1,,spriteset,,,,,,,,
+Tram Sprites,spr_tram_rails,tram_rails,-1,,spriteset_tram,,,,,,,,
 Track,track,track,1,5,roadtype,DIRT,depot,8,16,12.5,0,"ROAD,A_RD,B_RD,TOWN,CONC",TOWN_BUILD
 Sett Road,sett_road,sett_road,2,10,roadtype,ROAD,depot,8,16,25,1820,"A_RD,B_RD,TOWN,CONC,MWAY",TOWN_BUILD
 Concrete Road,concrete,concrete,3,15,roadtype,CONC,depot,8,16,30,1900,"A_RD,B_RD,MWAY",TOWN_BUILD
@@ -13,3 +14,4 @@ Town Road,town,town,4,20,roadtype,TOWN,depot,8,16,30,1950,"A_RD,B_RD,MWAY",TOWN_
 B Road,b_road,b_road,5,25,roadtype,B_RD,depot,8,16,40,1935,"A_RD,MWAY",
 A Road,a_road,a_road,6,30,roadtype,A_RD,depot,8,16,60,1955,MWAY,NO_HOUSES
 Motorway,motorway,motorway,7,35,roadtype,MWAY,depot,8,16,,1960,,"NO_HOUSES,NO_LEVEL_CROSSING"
+Tramway,tramway,tram_rails,8,40,tramtype,RAIL,depot,8,16,,1840,ELRL,

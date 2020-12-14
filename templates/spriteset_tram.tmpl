@@ -1,0 +1,9 @@
+// Spritesets
+// Overlay
+spriteset({{.spriteset}}_overlay, "sheets_1x/{{.spriteset}}_8bpp.png") {
+    tmpl_underlay(1)
+}
+
+alternative_sprites({{.spriteset}}_overlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_8bpp.png") {
+    tmpl_underlay(2)
+}

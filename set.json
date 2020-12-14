@@ -35,7 +35,11 @@
         "STR_MENU_B_RD": "B Road construction",
         "STR_TOOLBAR_B_RD": "B Road Construction",
         "STR_MENU_MWAY": "Motorway construction",
-        "STR_TOOLBAR_MWAY": "Motorway Construction",        
+        "STR_TOOLBAR_MWAY": "Motorway Construction",  
+        "STR_MENU_RAIL": "Tramway (unelectrical) construction",
+        "STR_TOOLBAR_RAIL": "Tramway (unelectrical) Construction",              
+        "STR_MENU_ELRL": "Tramway (electrified) construction",
+        "STR_TOOLBAR_ELRL": "Tramway (electrified) Construction",                      
         "STR_MENU_TMPL": "Template Road construction",
         "STR_TOOLBAR_TMPL": "Template Road Construction"
     }

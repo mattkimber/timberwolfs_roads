@@ -55,7 +55,7 @@ template tmpl_bridge_slope_y_m(y, m) {
     ground_tile_bridge_slope(0, y, m, -1, 0, 0)
 }
 
-// Underlay (19 tiles)
+// Underlay/overlay (19 tiles)
 // 2x straight
 // 1x crossroad
 // 4x junction
