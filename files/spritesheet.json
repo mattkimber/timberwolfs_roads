@@ -2,9 +2,12 @@
   {
     "prefixes": [
     "a_road",
+    "b_road",
     "track",
     "town",
-	"sett_road"
+    "concrete",
+    "motorway",
+  	"sett_road"
     ],
 	"suffixes": [
 		"8bpp"

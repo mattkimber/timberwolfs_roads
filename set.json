@@ -28,8 +28,14 @@
         "STR_TOOLBAR_ROAD": "Sett Road Construction",
         "STR_MENU_TOWN": "Town Road construction",
         "STR_TOOLBAR_TOWN": "Town Road Construction",
+        "STR_MENU_CONC": "Concrete Road construction",
+        "STR_TOOLBAR_CONC": "Concrete Road Construction",
         "STR_MENU_A_RD": "A Road construction",
         "STR_TOOLBAR_A_RD": "A Road Construction",
+        "STR_MENU_B_RD": "B Road construction",
+        "STR_TOOLBAR_B_RD": "B Road Construction",
+        "STR_MENU_MWAY": "Motorway construction",
+        "STR_TOOLBAR_MWAY": "Motorway Construction",        
         "STR_MENU_TMPL": "Template Road construction",
         "STR_TOOLBAR_TMPL": "Template Road Construction"
     }
