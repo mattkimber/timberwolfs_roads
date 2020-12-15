@@ -8,7 +8,8 @@
     "concrete",
     "motorway",
     "sett_road",
-    "tram_rails"
+    "tram_rails",
+    "tram_underlay"
     ],
 	"suffixes": [
 		"8bpp"

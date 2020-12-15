@@ -26,6 +26,10 @@ item(FEAT_TRAMTYPES, {{.id}}, {{.numeric_id}}) {
 
     graphics {
         track_overlay: {{.spriteset}}_overlay;
-        underlay: town_underlay;
+        underlay: {{.spriteset}}_underlay;
+        bridge_surfaces: {{.spriteset}}_wombling_free;
+        {{- if .catenary}}
+        catenary_front: {{.catenary}}_catenary;
+        {{- end}}
     }
 }

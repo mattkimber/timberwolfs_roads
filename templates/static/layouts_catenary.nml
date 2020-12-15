@@ -1,0 +1,71 @@
+// catenary and slope tiles
+template catenary_tile(x, y, m) { [(x*72)*m, ((y*62)+8)*m, 64*m, 48*m, -31*m, (-21*m)+1] }
+template catenary_tile_offset(x, y, m,o) { [(x*72)*m, ((y*62)+8)*m, 64*m, 48*m, (o-31)*m, (-21*m)+1] }
+template catenary_tile_slope(x, y, m, o) { [(x*72)*m, (y*62)*m, 64*m, (48+8)*m, (o-31)*m, (-28*m)-(m/2)] }
+template catenary_tile_bridge_slope(x, y, m, o, u, um) { [(x*72)*m, (y*62)*m, 64*m, 48+8*m, (o-31)*m, (u-28*m)-(m/2)+(m == 2 ? um : 0)] }
+
+// 1 direction tile
+template catenary_tmpl_1_dir_y_m(y,m) {
+    catenary_tile(0, y, m)
+}
+
+// 2 direction tile
+template catenary_tmpl_2_dir_y_m(y,m) {
+    catenary_tile(0, y, m)
+    catenary_tile(1, y, m)
+}
+
+// 4 direction tile
+template catenary_tmpl_4_dir_junction_y_m(y,m) {
+    catenary_tile(0, y, m)
+    catenary_tile(1, y, m)
+    catenary_tile(2, y, m)
+    catenary_tile(3, y, m)
+}
+
+// 4 direction tile with swapped directions (curves/ends)
+template catenary_tmpl_4_dir_curve_y_m(y,m) {
+    catenary_tile(0, y, m)
+    catenary_tile(3, y, m)
+    catenary_tile(2, y, m)
+    catenary_tile(1, y, m)
+}
+
+
+// 4 directions of slopes
+template catenary_tmpl_slope_y_m(y, m) {
+    catenary_tile_slope(3, y, m, 1)
+    catenary_tile_slope(2, y, m, -1)
+    catenary_tile_slope(1, y, m, 1)
+    catenary_tile_slope(0, y, m, -1)
+}
+
+// 4 directions of bridge slopes
+template catenary_tmpl_bridge_slope_y_m(y, m) {
+    catenary_tile_bridge_slope(3, y, m, 1, 0, 0)
+    catenary_tile_bridge_slope(2, y, m, -1, 1, 1)
+    catenary_tile_bridge_slope(1, y, m, 0, 1, 1)
+    catenary_tile_bridge_slope(0, y, m, -1, 0, 0)
+}
+
+// Catenary
+// 2x straight
+// 1x crossroad
+// 4x junction
+// 4x corner
+// 4x slope
+// 4x end tile
+// 4x tunnels
+// 2x bridge surface
+// 4x bridge ramp
+template tmpl_catenary(m) {
+    catenary_tmpl_2_dir_y_m(0,m)
+    catenary_tmpl_1_dir_y_m(1,m)
+    catenary_tmpl_4_dir_junction_y_m(4,m)
+    catenary_tmpl_4_dir_curve_y_m(2,m)
+    catenary_tmpl_slope_y_m(5, m)
+    catenary_tmpl_4_dir_curve_y_m(3,m)  
+    catenary_tmpl_4_dir_curve_y_m(8,m)
+    catenary_tmpl_2_dir_y_m(6,m)
+    catenary_tmpl_bridge_slope_y_m(7, m)
+}

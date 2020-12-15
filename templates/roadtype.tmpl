@@ -28,5 +28,8 @@ item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
         underlay: {{.spriteset}}_underlay;
         roadstops: {{.spriteset}}_roadstop;
         bridge_surfaces: {{.spriteset}}_bridge_surfaces;
+        {{- if .catenary}}
+        catenary_front: {{.catenary}}_catenary;
+        {{- end}}
     }
 }

@@ -1,9 +1,27 @@
 // Spritesets
 // Overlay
-spriteset({{.spriteset}}_overlay, "sheets_1x/{{.spriteset}}_8bpp.png") {
+spriteset({{.spriteset}}_overlay, "sheets_1x/{{.spriteset}}_rails_8bpp.png") {
     tmpl_underlay(1)
 }
 
-alternative_sprites({{.spriteset}}_overlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_8bpp.png") {
+alternative_sprites({{.spriteset}}_overlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_rails_8bpp.png") {
     tmpl_underlay(2)
+}
+
+// Underlay
+spriteset({{.spriteset}}_underlay, "sheets_1x/{{.spriteset}}_underlay_8bpp.png") {
+    tmpl_underlay(1)
+}
+
+alternative_sprites({{.spriteset}}_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_underlay_8bpp.png") {
+    tmpl_underlay(2)
+}
+
+// Bridge Surfaces
+spriteset({{.spriteset}}_wombling_free, "sheets_1x/{{.spriteset}}_underlay_8bpp.png") {
+    tmpl_bridge_surfaces(1)
+}
+
+alternative_sprites({{.spriteset}}_wombling_free, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_underlay_8bpp.png") {
+    tmpl_bridge_surfaces(2)
 }

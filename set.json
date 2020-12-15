@@ -12,6 +12,9 @@
     "static_templates": [
         {
             "template":  "templates/static/layouts.nml"
+        },
+        {
+            "template":  "templates/static/layouts_catenary.nml"
         }
     ],
     "sprites": {
@@ -30,14 +33,18 @@
         "STR_TOOLBAR_TOWN": "Town Road Construction",
         "STR_MENU_CONC": "Concrete Road construction",
         "STR_TOOLBAR_CONC": "Concrete Road Construction",
+        "STR_MENU_ELRD": "Concrete Road (electrified) construction",
+        "STR_TOOLBAR_ELRD": "Concrete Road (electrified) Construction",
+        "STR_MENU_ELR2": "Town Road (electrified) construction",
+        "STR_TOOLBAR_ELR2": "Town Road (electrified) Construction",
         "STR_MENU_A_RD": "A Road construction",
         "STR_TOOLBAR_A_RD": "A Road Construction",
         "STR_MENU_B_RD": "B Road construction",
         "STR_TOOLBAR_B_RD": "B Road Construction",
         "STR_MENU_MWAY": "Motorway construction",
         "STR_TOOLBAR_MWAY": "Motorway Construction",  
-        "STR_MENU_RAIL": "Tramway (unelectrical) construction",
-        "STR_TOOLBAR_RAIL": "Tramway (unelectrical) Construction",              
+        "STR_MENU_RAIL": "Tramway construction",
+        "STR_TOOLBAR_RAIL": "Tramway Construction",              
         "STR_MENU_ELRL": "Tramway (electrified) construction",
         "STR_TOOLBAR_ELRL": "Tramway (electrified) Construction",                      
         "STR_MENU_TMPL": "Template Road construction",
