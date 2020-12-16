@@ -1,9 +1,11 @@
 // Spritesets
-// Catenary
-spriteset({{.spriteset}}_catenary, "sheets_1x/catenary_{{.spriteset}}_8bpp.png") {
+// Catenary (front, wires)
+spriteset({{.spriteset}}_catenary_front, "sheets_1x/catenary_wire_{{.spriteset}}_8bpp.png") {
     tmpl_catenary(1)
 }
 
-alternative_sprites({{.spriteset}}_catenary, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/catenary_{{.spriteset}}_8bpp.png") {
+alternative_sprites({{.spriteset}}_catenary_front, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/catenary_wire_{{.spriteset}}_8bpp.png") {
     tmpl_catenary(2)
 }
+
+// No back as the sprite sorting doesn't work.

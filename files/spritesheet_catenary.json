@@ -1,7 +1,7 @@
 [
   {
     "prefixes": [
-    "catenary_tmpl"
+    "catenary_wire_tmpl"
     ],
 	"suffixes": [
 		"8bpp"
