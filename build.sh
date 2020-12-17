@@ -3,6 +3,7 @@
 # Necessary directories
 mkdir -p processed/slopes
 mkdir -p processed/catenary_slopes
+mkdir -p processed/depots
 
 
 # Processed objects
@@ -12,6 +13,9 @@ echo "Compositing"
 
 ../cargopositor/cargopositor.exe -o processed/catenary_slopes -v voxels/catenary/straight positor/slopes.json
 ../cargopositor/cargopositor.exe -o processed/catenary_slopes -v voxels/catenary/bridge positor/slopes.json
+
+../cargopositor/cargopositor.exe -o processed/depots -v voxels/depot/road positor/depots.json
+
 
 # Render
 echo "Rendering roads/rails"
@@ -45,7 +49,7 @@ echo
 echo "Rendering depots"
 
 
-../gorender/renderobject.exe -m files/manifest_depot_4x.json -8 -s 1,2 -u -r -progress voxels/depot/road/*.vox
+../gorender/renderobject.exe -m files/manifest_depot_4x.json -8 -s 1,2 -u -r -progress processed/depots/*.vox
 
 
 # Assemble spritesheets
@@ -60,9 +64,11 @@ mkdir -p sheets_2x
 
 # Catenary spritesheets
 ../splatter/splatter.exe -i 1x -o sheets_1x -d files/spritesheet_catenary.json -m 4 
-#-k files/catenary_mask_1x.png
 ../splatter/splatter.exe -i 2x -o sheets_2x -d files/spritesheet_catenary.json -m 8 
-#-k files/catenary_mask_2x.png
+
+# Depot spritesheets
+../splatter/splatter.exe -i 1x -o sheets_1x -d files/spritesheet_depot.json -m 4 
+../splatter/splatter.exe -i 2x -o sheets_2x -d files/spritesheet_depot.json -m 8 
 
 # Run Roadie
 echo "Creating NML"

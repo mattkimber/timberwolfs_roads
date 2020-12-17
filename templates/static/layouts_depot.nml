@@ -1,5 +1,14 @@
-template depot_tile_a(x, y, m) { [(x*72)*m, ((y*(55+8))*m), 64*m, 55*m, -63*m, (-38*m)+1] }
-template depot_tile_b(x, y, m) { [(x*72)*m, ((y*(55+8))*m), 64*m, 55*m, 1*m, (-38*m)+1] }
+template depot_tile_a(x, y, m) { [(x*72)*m, ((y*(55+4))*m), 64*m, 55*m, 0*m, (-38*m)+1] }
+
+template depot_tile_a_wall(x, y, m) { [(x*72)*m, ((y*(55+4))*m), 64*m, 55*m, -30*m, (-23*m)+1] }
+
+template depot_tile_b(x, y, m) { [(x*72)*m, ((y*(55+4))*m), 64*m, 55*m, -62*m, (-38*m)+1] }
+
+template depot_tile_b_wall(x, y, m) { [(x*72)*m, ((y*(55+4))*m), 64*m, 55*m, -32*m, (-23*m)+1] }
+
+template depot_tile_c(x, y, m) { [(x*72)*m, ((y*(55+4))*m), 64*m, 55*m, -60*m, (-39*m)+1] }
+
+template depot_tile_d(x, y, m) { [(x*72)*m, ((y*(55+4))*m), 64*m, 55*m, -2*m, (-39*m)+1] }
 
 
 // temporary - transparent clip
@@ -13,10 +22,10 @@ template depot_wall(x, y, m) { [0*x,0*y, 1, 1, 0, 0*m] }
 // NE entry building
 // NW entry building
 template tmpl_depot(m) {
-    depot_wall(0, 0, m)
-    depot_tile_b(0, 0, m)
-    depot_wall(1, 0, m)
-    depot_tile_a(1, 0, m)
-    depot_tile_a(2, 0, m)
-    depot_tile_b(3, 0, m)
+    depot_tile_a_wall(0, 2, m)
+    depot_tile_a(0, 1, m)
+    depot_tile_b_wall(1, 2, m)
+    depot_tile_b(1, 1, m)
+    depot_tile_c(2, 0, m)
+    depot_tile_d(3, 0, m)
 }
