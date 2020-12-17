@@ -41,6 +41,12 @@ echo "Rendering catenary"
 
 ../gorender/renderobject.exe -m files/manifest_catenary_4x.json -8 -s 1,2 -u -r -progress processed/catenary_slopes/*.vox
 
+echo
+echo "Rendering depots"
+
+
+../gorender/renderobject.exe -m files/manifest_depot_4x.json -8 -s 1,2 -u -r -progress voxels/depot/road/*.vox
+
 
 # Assemble spritesheets
 echo

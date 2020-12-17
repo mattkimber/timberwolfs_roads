@@ -31,5 +31,8 @@ item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
         {{- if .catenary}}
         catenary_front: {{.catenary}}_catenary_front;
         {{- end}}
+        {{- if .depot_type}}
+        depots: {{.depot_type}}_depot;
+        {{- end}}
     }
 }

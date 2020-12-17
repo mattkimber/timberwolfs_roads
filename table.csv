@@ -8,14 +8,17 @@ Sprites,spr_sett_road,sett_road,-1,,spriteset,,,,,,,,,
 Sprites,spr_motorway,motorway,-1,,spriteset,,,,,,,,,
 Tram Sprites,spr_tram_rails,tram,-1,,spriteset_tram,,,,,,,,,
 Catenary Sprites,spr_catenary_tmpl,tmpl,-1,,spriteset_catenary,,,,,,,,,
-Track,track,track,1,5,roadtype,DIRT,depot,8,16,12.5,0,"ROAD,A_RD,B_RD,TOWN,CONC,ELRD,ELR2",TOWN_BUILD,
-Sett Road,sett_road,sett_road,2,10,roadtype,ROAD,depot,8,16,25,1820,"A_RD,B_RD,TOWN,CONC,MWAY,ELRD,ELR2",TOWN_BUILD,
-Concrete Road,concrete,concrete,3,15,roadtype,CONC,depot,8,16,30,1900,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,
-Concrete Road with trolley wires,concrete_trolley,concrete,4,20,roadtype,ELRD,depot,8,16,30,1900,ELR2,CATENARY,tmpl
-Town Road,town,town,5,25,roadtype,TOWN,depot,8,16,30,1950,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,
-Town Road with trolley wire,town_trolley,town,6,30,roadtype,ELR2,depot,8,16,30,1950,ELRD,CATENARY,tmpl
-B Road,b_road,b_road,7,35,roadtype,B_RD,depot,8,16,40,1935,"A_RD,MWAY",,
-A Road,a_road,a_road,8,40,roadtype,A_RD,depot,8,16,60,1955,MWAY,NO_HOUSES,
-Motorway,motorway,motorway,9,45,roadtype,MWAY,depot,8,16,,1960,,"NO_HOUSES,NO_LEVEL_CROSSING",
-Tramway,tramway,tram,10,50,tramtype,RAIL,depot,8,16,,1840,ELRL,,
-Electric Tramway,electric_tramway,tram,11,55,tramtype,ELRL,depot,8,16,,1890,,CATENARY,tmpl
+Catenary Sprites,spr_catenary_tram,tram,-1,,spriteset_catenary,,,,,,,,,
+Catenary Sprites,spr_catenary_trolley,trolley,-1,,spriteset_catenary,,,,,,,,,
+Catenary Sprites,spr_depot_foster,foster,-1,,spriteset_depot,,,,,,,,,
+Track,track,track,1,5,roadtype,DIRT,,4,4,12.5,0,"ROAD,A_RD,B_RD,TOWN,CONC,ELRD,ELR2",TOWN_BUILD,
+Sett Road,sett_road,sett_road,2,10,roadtype,ROAD,,12,12,25,1820,"A_RD,B_RD,TOWN,CONC,MWAY,ELRD,ELR2",TOWN_BUILD,
+Concrete Road,concrete,concrete,3,15,roadtype,CONC,,10,14,30,1900,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,
+Concrete Road with trolley wires,concrete_trolley,concrete,4,20,roadtype,ELRD,,18,20,30,1900,ELR2,CATENARY,trolley
+Town Road,town,town,5,25,roadtype,TOWN,,8,16,30,1950,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,
+Town Road with trolley wire,town_trolley,town,6,30,roadtype,ELR2,,16,24,30,1950,ELRD,CATENARY,trolley
+B Road,b_road,b_road,7,35,roadtype,B_RD,,10,16,40,1935,"A_RD,MWAY",,
+A Road,a_road,a_road,8,40,roadtype,A_RD,foster,14,20,60,1955,MWAY,NO_HOUSES,
+Motorway,motorway,motorway,9,45,roadtype,MWAY,,24,24,,1960,,"NO_HOUSES,NO_LEVEL_CROSSING",
+Tramway,tramway,tram,10,50,tramtype,RAIL,,10,16,,1840,ELRL,,
+Electric Tramway,electric_tramway,tram,11,55,tramtype,ELRL,,18,24,,1890,,CATENARY,tram

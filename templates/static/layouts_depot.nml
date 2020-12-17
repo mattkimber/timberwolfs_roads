@@ -1,0 +1,22 @@
+template depot_tile_a(x, y, m) { [(x*72)*m, ((y*(55+8))*m), 64*m, 55*m, -63*m, (-38*m)+1] }
+template depot_tile_b(x, y, m) { [(x*72)*m, ((y*(55+8))*m), 64*m, 55*m, 1*m, (-38*m)+1] }
+
+
+// temporary - transparent clip
+template depot_wall(x, y, m) { [0*x,0*y, 1, 1, 0, 0*m] }
+
+// depot
+// SE entry wall
+// SE entry building
+// SW entry wall
+// SW entry building
+// NE entry building
+// NW entry building
+template tmpl_depot(m) {
+    depot_wall(0, 0, m)
+    depot_tile_b(0, 0, m)
+    depot_wall(1, 0, m)
+    depot_tile_a(1, 0, m)
+    depot_tile_a(2, 0, m)
+    depot_tile_b(3, 0, m)
+}

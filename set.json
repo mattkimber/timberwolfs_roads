@@ -15,6 +15,9 @@
         },
         {
             "template":  "templates/static/layouts_catenary.nml"
+        },
+        {
+            "template":  "templates/static/layouts_depot.nml"
         }
     ],
     "sprites": {
