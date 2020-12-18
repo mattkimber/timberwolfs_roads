@@ -1,0 +1,28 @@
+// General switches
+// Needs to be a dynamic template so it loads after the spritesheets are defined
+// Include only once!
+
+
+switch (FEAT_ROADTYPES, SELF, switch_random_town_underlay, random_bits) {
+    1..3: town_underlay;
+    rvar_town_underlay;
+}
+
+switch(FEAT_ROADTYPES, SELF, switch_town_underlay, town_zone) {
+    TOWNZONE_CENTRE: switch_random_town_underlay;
+    TOWNZONE_INNER_SUBURB: switch_random_town_underlay;
+    outskirts_underlay;
+}
+
+switch(FEAT_ROADTYPES, SELF, switch_town_bridge_surfaces, town_zone) {
+    TOWNZONE_CENTRE: town_bridge_surfaces;
+    TOWNZONE_INNER_SUBURB: town_bridge_surfaces;
+    outskirts_bridge_surfaces;
+}
+
+switch(FEAT_ROADTYPES, SELF, switch_town_roadstop, town_zone) {
+    TOWNZONE_CENTRE: town_roadstop;
+    TOWNZONE_INNER_SUBURB: town_roadstop;
+    outskirts_roadstop;
+}
+

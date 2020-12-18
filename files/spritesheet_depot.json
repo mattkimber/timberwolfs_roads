@@ -1,7 +1,16 @@
 [
   {
     "prefixes": [
-    "foster"
+    "depot_1800s",
+    "depot_1890s_sett",
+    "depot_1940s_sett",
+    "foster_sett",
+    "depot_1890s_concrete",
+    "depot_1940s_concrete",
+    "foster_concrete",
+    "depot_1890s_road",
+    "depot_1940s_road",
+    "foster_road"
     ],
 	"suffixes": [
 		"8bpp"
