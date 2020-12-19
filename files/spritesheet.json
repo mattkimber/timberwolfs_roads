@@ -12,7 +12,13 @@
     "motorway",
     "sett_road",
     "tram_rails",
-    "tram_underlay"
+    "tram_underlay",
+    "one_way",
+    "rhs_a_road",
+    "rhs_b_road",
+    "rhs_town",
+    "rhs_rvar_town",
+    "rhs_outskirts"
     ],
 	"suffixes": [
 		"8bpp"

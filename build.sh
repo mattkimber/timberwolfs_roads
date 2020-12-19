@@ -17,6 +17,9 @@ echo "Compositing"
 ../cargopositor/cargopositor.exe -o processed/depots -v voxels/depot/regular positor/depots.json
 ../cargopositor/cargopositor.exe -o processed/depots -v voxels/depot/electric positor/depots_elec.json
 
+../cargopositor/cargopositor.exe -o processed/slopes -v voxels/rhs/straight positor/slopes.json
+../cargopositor/cargopositor.exe -o processed/slopes -v voxels/rhs/bridge positor/slopes.json
+
 
 # Render
 echo "Rendering roads/rails"
@@ -28,7 +31,18 @@ echo "Rendering roads/rails"
 
 ../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/no_inclines/*.vox
 
-../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/misc/*.vox
+../gorender/renderobject.exe -m files/manifest_4x.json -8 -s 1,2 -u -r -progress voxels/misc/*.vox
+
+## RHS
+
+../gorender/renderobject.exe -m files/manifest_1x.json -8 -s 1,2 -u -r -progress voxels/rhs/crossroad/*.vox
+
+../gorender/renderobject.exe -m files/manifest_4x.json -8 -s 1,2 -u -r -progress voxels/rhs/junctions/*.vox
+
+../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/rhs/straight/*.vox
+
+../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/rhs/no_inclines/*.vox
+
 
 # Don't render the bridge/ directory as it contains only ramps
 
@@ -82,3 +96,10 @@ echo "Creating NML"
 # NML compilation
 echo "Compiling NML"
 ../nml/nmlc.exe -c timberwolfs_roads.nml
+
+# Build TAR
+echo "Building TAR"
+mkdir -p timberwolfs_roads
+mv *.grf timberwolfs_roads
+cp grf_readme/* timberwolfs_roads
+tar -c timberwolfs_roads > timberwolfs_roads.tar

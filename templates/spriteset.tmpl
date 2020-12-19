@@ -8,6 +8,7 @@ alternative_sprites({{.spriteset}}_underlay, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  
     tmpl_underlay(2)
 }
 
+{{if .has_roadstop}}
 // Roadstop
 spriteset({{.spriteset}}_roadstop, "sheets_1x/{{.spriteset}}_8bpp.png") {
     tmpl_roadstop(1)
@@ -16,7 +17,10 @@ spriteset({{.spriteset}}_roadstop, "sheets_1x/{{.spriteset}}_8bpp.png") {
 alternative_sprites({{.spriteset}}_roadstop, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_8bpp.png") {
     tmpl_roadstop(2)
 }
+{{end}}
 
+
+{{if .has_bridge}}
 // Bridge Surfaces
 spriteset({{.spriteset}}_bridge_surfaces, "sheets_1x/{{.spriteset}}_8bpp.png") {
     tmpl_bridge_surfaces(1)
@@ -25,3 +29,4 @@ spriteset({{.spriteset}}_bridge_surfaces, "sheets_1x/{{.spriteset}}_8bpp.png") {
 alternative_sprites({{.spriteset}}_bridge_surfaces, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/{{.spriteset}}_8bpp.png") {
     tmpl_bridge_surfaces(2)
 }
+{{end}}

@@ -1,0 +1,23 @@
+template one_way_tile_a_m(x, y, m) { [(x*72)*m, (((y*(39+4))+8)*m), 64*m, 31*m, -32*m, (-16*m)+1] }
+template one_way_tile_b_m(x, y, m) { [(x*72)*m, (((y*(39+4))+8)*m), 64*m, 31*m, -27*m, (-14*m)+1] }
+
+// One way arrow replacement
+// 4 directional arrows + 2 no entry signs
+replacenew one_way_road_signs(ONE_WAY_ROAD, "sheets_1x/one_way_8bpp.png")
+{
+    one_way_tile_a_m(3, 0, 1)
+    one_way_tile_a_m(1, 0, 1)
+    one_way_tile_a_m(3, 1, 1)
+    one_way_tile_b_m(2, 0, 1)
+    one_way_tile_b_m(0, 1, 1)
+    one_way_tile_b_m(0, 1, 1)
+}
+
+alternative_sprites(one_way_road_signs, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "sheets_2x/one_way_8bpp.png") {
+    one_way_tile_a_m(3, 0, 2)
+    one_way_tile_a_m(1, 0, 2)
+    one_way_tile_a_m(3, 1, 2)
+    one_way_tile_b_m(2, 0, 2)
+    one_way_tile_b_m(0, 1, 2)
+    one_way_tile_b_m(0, 1, 2)
+}

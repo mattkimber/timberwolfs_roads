@@ -2,29 +2,55 @@
 // Needs to be a dynamic template so it loads after the spritesheets are defined
 // Include only once!
 
-// Town roads
+// Traffic side switches
+switch (FEAT_ROADTYPES, SELF, switch_driveside_town_underlay, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_town_underlay;
+    town_underlay;
+}
+
+switch (FEAT_ROADTYPES, SELF, switch_driveside_rvar_town_underlay, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_rvar_town_underlay;
+    rvar_town_underlay;
+}
+
+switch (FEAT_ROADTYPES, SELF, switch_driveside_outskirts_underlay, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_outskirts_underlay;
+    outskirts_underlay;
+}
+
+// Slight hack as the town will start with a switch called switch_driveside_town_roadstop
+switch (FEAT_ROADTYPES, SELF, switch_driveside_town_roadstop_inner, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_town_roadstop;
+    town_roadstop;
+}
+
+switch (FEAT_ROADTYPES, SELF, switch_driveside_outskirts_roadstop, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_outskirts_roadstop;
+    outskirts_roadstop;
+}
 
 switch (FEAT_ROADTYPES, SELF, switch_random_town_underlay, random_bits) {
-    1..3: town_underlay;
-    rvar_town_underlay;
+    1..3: switch_driveside_town_underlay;
+    switch_driveside_rvar_town_underlay;
 }
 
 switch(FEAT_ROADTYPES, SELF, switch_town_underlay, town_zone) {
     TOWNZONE_CENTRE: switch_random_town_underlay;
     TOWNZONE_INNER_SUBURB: switch_random_town_underlay;
-    outskirts_underlay;
+    switch_driveside_outskirts_underlay;
 }
 
-switch(FEAT_ROADTYPES, SELF, switch_town_bridge_surfaces, town_zone) {
+// Slight naming hack to use the driveside logic
+switch(FEAT_ROADTYPES, SELF, switch_driveside_town_bridge_surfaces, town_zone) {
     TOWNZONE_CENTRE: town_bridge_surfaces;
     TOWNZONE_INNER_SUBURB: town_bridge_surfaces;
     outskirts_bridge_surfaces;
 }
 
-switch(FEAT_ROADTYPES, SELF, switch_town_roadstop, town_zone) {
-    TOWNZONE_CENTRE: town_roadstop;
-    TOWNZONE_INNER_SUBURB: town_roadstop;
-    outskirts_roadstop;
+switch(FEAT_ROADTYPES, SELF, switch_driveside_town_roadstop, town_zone) {
+    TOWNZONE_CENTRE: switch_driveside_town_roadstop_inner;
+    TOWNZONE_INNER_SUBURB: switch_driveside_town_roadstop_inner;
+    switch_driveside_outskirts_roadstop;
 }
 
 // Tracks (cobbled roads in town)
@@ -34,4 +60,29 @@ switch(FEAT_ROADTYPES, SELF, switch_track_underlay, town_zone) {
     TOWNZONE_OUTER_SUBURB: cobble_underlay;
     TOWNZONE_OUTSKIRT: cobble_underlay;
     track_underlay;
+}
+
+
+
+
+// A road driveside switches
+switch (FEAT_ROADTYPES, SELF, switch_driveside_a_road_underlay, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_a_road_underlay;
+    a_road_underlay;
+}
+
+switch (FEAT_ROADTYPES, SELF, switch_driveside_a_road_roadstop, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_a_road_roadstop;
+    a_road_roadstop;
+}
+
+switch (FEAT_ROADTYPES, SELF, switch_driveside_a_road_bridge_surfaces, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_a_road_bridge_surfaces;
+    a_road_bridge_surfaces;
+}
+
+// B road driveside switches
+switch (FEAT_ROADTYPES, SELF, switch_driveside_b_road_underlay, traffic_side) {
+    TRAFFIC_SIDE_RIGHT: rhs_b_road_underlay;
+    b_road_underlay;
 }

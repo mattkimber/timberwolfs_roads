@@ -6,6 +6,7 @@ echo "Creating GUI"
 
 # GUI
 mkdir -p gui_rendered
+mkdir -p gui_output
 
 # Depot GUI
 ../gorender/renderobject.exe -o gui_rendered/depot -8 -s 1 -m files/manifest_gui.json voxels/depot/empty/foster.vox 

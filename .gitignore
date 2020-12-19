@@ -5,6 +5,7 @@ sheets_2x
 processed
 *.grf
 timberwolfs_roads.nml
+timberwolfs_roads
 lang/*
 gui_output
 gui_rendered

@@ -12,6 +12,8 @@ item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
 
         // build_window_caption, autoreplace_text and new_engine_text stay as default
 
+        {{if .prerequisites}}requires_roadtype_list: [ {{ range $idx, $element := slice .prerequisites -}}{{if ne $idx 0}},{{end}}"{{$element}}"{{end}}];{{end}}
+
         {{if .compatibility}}powered_roadtype_list: [ {{ range $idx, $element := slice .compatibility -}}{{if ne $idx 0}},{{end}}"{{$element}}"{{end}}];{{end}}
 
         {{if .flags}}roadtype_flags: bitmask({{ range $idx, $element := slice .flags -}}{{if ne $idx 0}},{{end}}ROADTYPE_FLAG_{{$element}}{{end}});{{end}}
@@ -26,18 +28,34 @@ item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
 
     graphics {
         // Special switch for tracks
-        {{- if eq .spriteset "track" }}
-        underlay: switch_{{.spriteset}}_underlay;
+        {{- if .custom_switch }}
+        underlay: switch_{{.custom_switch}}_underlay;
         {{- else }}
         underlay: {{.spriteset}}_underlay;
         {{- end}}
+
+        {{- if .has_roadstop}}
+        roadstops: switch_driveside_{{.spriteset}}_roadstop;
+        {{- else}}
         roadstops: {{.spriteset}}_roadstop;
+        {{- end}}
+
+        {{- if .has_bridge}}
+        bridge_surfaces: switch_driveside_{{.spriteset}}_bridge_surfaces;
+        {{- else}}
         bridge_surfaces: {{.spriteset}}_bridge_surfaces;
+        {{- end}}
+
         {{- if .catenary}}
         catenary_front: {{.catenary}}_catenary_front;
         {{- end}}
+
         {{- if .depot_type}}
+        {{- if eq .depot_type "track" }}
+        depots: depot_1800s_depot;
+        {{- else }}
         depots: switch_depot_{{.depot_type}};
+        {{- end -}}
         {{- end}}
         gui: {{.gui}}_gui;
     }
