@@ -18,6 +18,9 @@
         },
         {
             "template":  "templates/static/layouts_depot.nml"
+        },
+        {
+            "template":  "templates/static/layout_gui.nml"
         }
     ],
     "sprites": {

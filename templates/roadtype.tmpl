@@ -25,7 +25,12 @@ item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
     }
 
     graphics {
+        // Special switch for tracks
+        {{- if eq .spriteset "track" }}
+        underlay: switch_{{.spriteset}}_underlay;
+        {{- else }}
         underlay: {{.spriteset}}_underlay;
+        {{- end}}
         roadstops: {{.spriteset}}_roadstop;
         bridge_surfaces: {{.spriteset}}_bridge_surfaces;
         {{- if .catenary}}
@@ -34,5 +39,6 @@ item(FEAT_ROADTYPES, {{.id}}, {{.numeric_id}}) {
         {{- if .depot_type}}
         depots: switch_depot_{{.depot_type}};
         {{- end}}
+        gui: {{.gui}}_gui;
     }
 }

@@ -1,39 +1,51 @@
 ##grflangid 0x01
 STR_GRF_NAME :Timberwolf's Roads (alpha)
 STR_GRF_DESCRIPTION :A 2x zoom road set featuring multiple types of road and tram rails
+STR_MENU_CONC :Concrete Road construction
+STR_MENU_ELRD :Concrete Road (electrified) construction
+STR_TOOLBAR_ELRD :Concrete Road (electrified) Construction
+STR_MENU_B_RD :B Road construction
+STR_TOOLBAR_MWAY :Motorway Construction
+STR_MENU_ELRL :Tramway (electrified) construction
+STR_MENU_DIRT :Unpaved Track construction
+STR_TOOLBAR_DIRT :Unpaved Track  Construction
+STR_TOOLBAR_TOWN :Town Road Construction
+STR_TOOLBAR_ROAD :Sett Road Construction
+STR_MENU_TOWN :Town Road construction
+STR_TOOLBAR_ELRL :Tramway (electrified) Construction
+STR_MENU_ELR2 :Town Road (electrified) construction
+STR_TOOLBAR_A_RD :A Road Construction
 STR_TOOLBAR_ELR2 :Town Road (electrified) Construction
+STR_MENU_A_RD :A Road construction
 STR_TOOLBAR_B_RD :B Road Construction
 STR_MENU_MWAY :Motorway construction
 STR_MENU_RAIL :Tramway construction
 STR_TOOLBAR_RAIL :Tramway Construction
-STR_MENU_DIRT :Unpaved Track construction
-STR_TOOLBAR_ROAD :Sett Road Construction
-STR_TOOLBAR_ELRD :Concrete Road (electrified) Construction
-STR_TOOLBAR_TMPL :Template Road Construction
-STR_TOOLBAR_A_RD :A Road Construction
-STR_MENU_ELRL :Tramway (electrified) construction
-STR_TOOLBAR_ELRL :Tramway (electrified) Construction
-STR_MENU_TMPL :Template Road construction
-STR_MENU_ELRD :Concrete Road (electrified) construction
-STR_MENU_ELR2 :Town Road (electrified) construction
-STR_MENU_A_RD :A Road construction
-STR_TOOLBAR_MWAY :Motorway Construction
-STR_TOOLBAR_DIRT :Unpaved Track  Construction
-STR_MENU_TOWN :Town Road construction
-STR_TOOLBAR_CONC :Concrete Road Construction
-STR_MENU_B_RD :B Road construction
 STR_MENU_ROAD :Sett Road construction
-STR_TOOLBAR_TOWN :Town Road Construction
-STR_MENU_CONC :Concrete Road construction
+STR_TOOLBAR_CONC :Concrete Road Construction
+STR_MENU_TMPL :Template Road construction
+STR_TOOLBAR_TMPL :Template Road Construction
 STR_NAME_SPR_A_ROAD :Sprites
 STR_NAME_SPR_B_ROAD :Sprites
 STR_NAME_SPR_TRACK :Sprites
+STR_NAME_SPR_COBBLE :Sprites
 STR_NAME_SPR_CONCRETE :Sprites
 STR_NAME_SPR_RVAR_TOWN :Sprites
 STR_NAME_SPR_TOWN :Sprites
 STR_NAME_SPR_OUTSKIRTS :Sprites
 STR_NAME_SPR_SETT_ROAD :Sprites
 STR_NAME_SPR_MOTORWAY :Sprites
+STR_NAME_GUI_A_ROAD :GUI Sprites
+STR_NAME_GUI_B_ROAD :GUI Sprites
+STR_NAME_GUI_TRACK :GUI Sprites
+STR_NAME_GUI_CONCRETE :GUI Sprites
+STR_NAME_GUI_TOWN :GUI Sprites
+STR_NAME_GUI_SET_ROAD :GUI Sprites
+STR_NAME_GUI_MOTORWAY :GUI Sprites
+STR_NAME_GUI_TRAM :GUI Sprites
+STR_NAME_GUI_CONCRETE_ELEC :GUI Sprites
+STR_NAME_GUI_ROAD_ELEC :GUI Sprites
+STR_NAME_GUI_TRAM_ELEC :GUI Sprites
 STR_NAME_SPR_TRAM_RAILS :Tram Sprites
 STR_NAME_SPR_CATENARY_TMPL :Catenary Sprites
 STR_NAME_SPR_CATENARY_TRAM :Catenary Sprites
@@ -48,9 +60,26 @@ STR_NAME_SPR_DEPOT_FOSTER_SETT :Depot Sprites
 STR_NAME_SPR_DEPOT_1890S_ROAD :Depot Sprites
 STR_NAME_SPR_DEPOT_1940S_ROAD :Depot Sprites
 STR_NAME_SPR_DEPOT_FOSTER_ROAD :Depot Sprites
+STR_NAME_SPR_DEPOT_1800S_TRAM :Depot Sprites
+STR_NAME_SPR_DEPOT_1890S_TRAM :Depot Sprites
+STR_NAME_SPR_DEPOT_1940S_TRAM :Depot Sprites
+STR_NAME_SPR_DEPOT_FOSTER_TRAM :Depot Sprites
+STR_NAME_SPR_DEPOT_1890S_ROAD_ELEC :Depot Sprites
+STR_NAME_SPR_DEPOT_1940S_ROAD_ELEC :Depot Sprites
+STR_NAME_SPR_DEPOT_FOSTER_ROAD_ELEC :Depot Sprites
+STR_NAME_SPR_DEPOT_1890S_ROAD_ELEC_CONCRETE :Depot Sprites
+STR_NAME_SPR_DEPOT_1940S_ROAD_ELEC_CONCRETE :Depot Sprites
+STR_NAME_SPR_DEPOT_FOSTER_ROAD_ELEC_CONCRETE :Depot Sprites
+STR_NAME_SPR_DEPOT_1890S_ELEC_TRAM :Depot Sprites
+STR_NAME_SPR_DEPOT_1940S_ELEC_TRAM :Depot Sprites
+STR_NAME_SPR_DEPOT_FOSTER_ELEC_TRAM :Depot Sprites
 STR_NAME_SWITCH_DEPOT_SETT :Depot Switch
 STR_NAME_SWITCH_DEPOT_CONCRETE :Depot Switch
 STR_NAME_SWITCH_DEPOT_ROAD :Depot Switch
+STR_NAME_SWITCH_DEPOT_ELEC :Depot Switch
+STR_NAME_SWITCH_DEPOT_ELEC_CONCRETE :Depot Switch
+STR_NAME_SWITCH_TRAM_DEPOT_TRAM :Tram Depot Switch
+STR_NAME_SWITCH_TRAM_DEPOT_TRAM_ELEC :Tram Depot Switch
 STR_NAME_GENERAL_SWITCHES :General Switches
 STR_NAME_TRACK :Track
 STR_NAME_SETT_ROAD :Sett Road

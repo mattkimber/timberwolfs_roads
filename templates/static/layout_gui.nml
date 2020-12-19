@@ -1,0 +1,33 @@
+// GUI
+// Single icon sprite
+template tmpl_gui_icon(x, y) {
+    [x, y, 20, 20, 0, 0]
+}
+
+// Single cursor sprite
+template tmpl_gui_big_cursor(x, y) {
+    [x, y, 54, 34, 0, 0]
+}
+
+// Single cursor sprite
+template tmpl_gui_small_cursor(x, y) {
+    [x, y, 46, 28, 0, 0]
+}
+
+
+// GUI sprites (8 icons, 8 cursors)
+template tmpl_gui() {
+    tmpl_gui_icon(  0, 0)
+    tmpl_gui_icon( 25, 0)
+    tmpl_gui_icon( 50, 0)
+    tmpl_gui_icon( 75, 0)
+    tmpl_gui_icon(100, 0)
+    tmpl_gui_icon(125, 0)
+
+    tmpl_gui_small_cursor(150, 0)
+    tmpl_gui_small_cursor(200, 0)
+    tmpl_gui_small_cursor(250, 0)
+    tmpl_gui_big_cursor(300, 0)
+    tmpl_gui_big_cursor(400, 0)
+    tmpl_gui_big_cursor(500, 0)
+}

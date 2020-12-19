@@ -6,3 +6,6 @@ processed
 *.grf
 timberwolfs_roads.nml
 lang/*
+gui
+*.tar
+.nmlcache

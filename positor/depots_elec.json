@@ -1,0 +1,25 @@
+{
+    "files": [
+        "*"
+    ],
+    "operations": [
+        {
+            "name": "_all",
+            "type": "produce_empty"
+        },
+        {
+            "name": "_front",
+            "type": "repeat",
+            "n": 1,
+            "ignore_mask": true,
+            "overwrite": true,
+            "file": "../clip/depot_clip_electric.vox"
+        },
+        {
+            "name": "_rear",
+            "type": "clip",
+            "file": "../clip/depot_clip_electric.vox",
+            "mask_original": true
+        }  
+    ]
+}

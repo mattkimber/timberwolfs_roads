@@ -1,0 +1,8 @@
+// Pick depot by year
+switch(FEAT_TRAMTYPES, SELF, {{.id}}, build_date) {
+    0..date(1885,2,15): depot_1800s_{{.spriteset}}_depot;
+    date(1885,2,16)..date(1933,11,6): depot_1890s_{{.spriteset}}_depot;
+    date(1933,11,7)..date(1954,4,8): depot_1940s_{{.spriteset}}_depot;
+    foster_{{.spriteset}}_depot;
+}
+

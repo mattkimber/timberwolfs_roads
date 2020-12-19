@@ -14,7 +14,8 @@ echo "Compositing"
 ../cargopositor/cargopositor.exe -o processed/catenary_slopes -v voxels/catenary/straight positor/slopes.json
 ../cargopositor/cargopositor.exe -o processed/catenary_slopes -v voxels/catenary/bridge positor/slopes.json
 
-../cargopositor/cargopositor.exe -o processed/depots -v voxels/depot/road positor/depots.json
+../cargopositor/cargopositor.exe -o processed/depots -v voxels/depot/regular positor/depots.json
+../cargopositor/cargopositor.exe -o processed/depots -v voxels/depot/electric positor/depots_elec.json
 
 
 # Render
@@ -26,6 +27,8 @@ echo "Rendering roads/rails"
 ../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/straight/*.vox
 
 ../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/no_inclines/*.vox
+
+../gorender/renderobject.exe -m files/manifest_2x.json -8 -s 1,2 -u -r -progress voxels/misc/*.vox
 
 # Don't render the bridge/ directory as it contains only ramps
 
@@ -52,6 +55,7 @@ echo "Rendering depots"
 ../gorender/renderobject.exe -m files/manifest_depot_4x.json -8 -s 1,2 -u -r -progress processed/depots/*.vox
 
 
+
 # Assemble spritesheets
 echo
 echo "Assembling Spritesheets"
@@ -69,6 +73,7 @@ mkdir -p sheets_2x
 # Depot spritesheets
 ../splatter/splatter.exe -i 1x -o sheets_1x -d files/spritesheet_depot.json -m 4 
 ../splatter/splatter.exe -i 2x -o sheets_2x -d files/spritesheet_depot.json -m 8 
+
 
 # Run Roadie
 echo "Creating NML"
