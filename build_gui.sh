@@ -8,7 +8,7 @@ echo "Creating GUI"
 mkdir -p gui_rendered
 
 # Depot GUI
-../gorender/renderobject.exe -o gui_rendered/depot -8 -s 1 -m files/manifest_gui.json voxels/depot/gui/foster.vox 
+../gorender/renderobject.exe -o gui_rendered/depot -8 -s 1 -m files/manifest_gui.json voxels/depot/empty/foster.vox 
 
 # Roads
 for i in voxels/crossroad/*.vox; do 
