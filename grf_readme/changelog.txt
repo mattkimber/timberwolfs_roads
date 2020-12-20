@@ -1,3 +1,9 @@
+v1.0.1
+------
+
+- Tweaks to road curvature and feature size.
+- Different minimap colour per roadtype.
+
 v1.0.0
 ------
 
