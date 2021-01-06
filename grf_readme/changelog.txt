@@ -1,3 +1,8 @@
+v1.0.2
+------
+
+- Fix incorrect sprite for one-way arrows.
+
 v1.0.1
 ------
 
