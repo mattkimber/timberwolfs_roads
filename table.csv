@@ -60,8 +60,8 @@ Depot Switch,switch_depot_elec_concrete,elec_concrete,-1,,depot_switch_road_elec
 Tram Depot Switch,switch_tram_depot_tram,tram,-1,,depot_switch_tram,,,,,,,,,,,,,,,,
 Tram Depot Switch,switch_tram_depot_tram_elec,elec_tram,-1,,depot_switch_tram_elec,,,,,,,,,,,,,,,,
 General Switches,general_switches,,-1,,general_switches,,,,,,,,,,,,,,,,
-Track,track,track,1,5,roadtype,,,,track,track,54,DIRT,,track,4,4,12.5,0,"ROAD,A_RD,B_RD,TOWN,CONC,ELRD,ELR2",TOWN_BUILD,
-Sett Road,sett_road,sett_road,2,10,roadtype,,,,,sett_road,128,ROAD,,sett,12,12,25,1820,"A_RD,B_RD,TOWN,CONC,MWAY,ELRD,ELR2",TOWN_BUILD,
+Track,track,track,1,5,roadtype,,,,track,track,54,DIRT,,track,4,4,12.5,0,"ROAD,A_RD,B_RD,TOWN,CONC,ELRD,ELR2,BRIC,GRVL,OFFR",TOWN_BUILD,
+Sett Road,sett_road,sett_road,2,10,roadtype,,,,,sett_road,128,ROAD,,sett,12,12,25,1820,"A_RD,B_RD,TOWN,CONC,MWAY,ELRD,ELR2,BRIC",TOWN_BUILD,
 Concrete Road,concrete,concrete,3,15,roadtype,,,,,concrete,112,CONC,,concrete,10,14,30,1900,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,
 Concrete Road with trolley wires,concrete_trolley,concrete,4,20,roadtype,,,,,concrete_elec,112,ELRD,,elec_concrete,18,20,30,,ELR2,CATENARY,trolley
 Town Road,town,town,5,25,roadtype,x,x,,town,town,1,TOWN,,road,8,16,30,1950,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,

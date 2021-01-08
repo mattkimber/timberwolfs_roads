@@ -1,0 +1,9 @@
+if(roadtype_available("ROAD")) {
+    item(FEAT_ROADTYPES, ROAD) {
+            property {
+            label:                      "ROAD";
+            powered_roadtype_list:		[ "SETT", "A_RD" ,"B_RD", "TOWN" ,"CONC", "MWAY", "ELRD", "ELR2" ];
+            roadtype_flags:        		bitmask(ROADTYPE_FLAG_HIDDEN);
+        }
+    }
+}
