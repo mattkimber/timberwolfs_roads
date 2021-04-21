@@ -66,8 +66,8 @@ Concrete Road,concrete,concrete,3,15,roadtype,,,,,concrete,112,CONC,,concrete,10
 Concrete Road with trolley wires,concrete_trolley,concrete,4,20,roadtype,,,,,concrete_elec,112,ELRD,,elec_concrete,18,20,30,,ELR2,CATENARY,trolley
 Town Road,town,town,5,25,roadtype,x,x,,town,town,1,TOWN,,road,8,16,30,1950,"A_RD,B_RD,MWAY,ELRD,ELR2",TOWN_BUILD,
 Town Road with trolley wire,town_trolley,town,6,30,roadtype,,,,town,town_elec,1,ELR2,ELRD,elec_bare,16,24,30,1950,ELRD,CATENARY,trolley
-B Road,b_road,b_road,7,35,roadtype,,,,driveside_b_road,b_road,2,B_RD,,road,10,16,40,1935,"A_RD,MWAY",,
-A Road,a_road,a_road,8,40,roadtype,x,x,,driveside_a_road,a_road,3,A_RD,,road,14,20,60,1955,MWAY,NO_HOUSES,
-Motorway,motorway,motorway,9,45,roadtype,,,,,motorway,4,MWAY,,road,24,24,,1960,,"NO_HOUSES,NO_LEVEL_CROSSING",
+B Road,b_road,b_road,7,35,roadtype,,,,driveside_b_road,b_road,2,B_RD,,road,10,16,40,1935,"A_RD,MWAY,B_RD,TOWN",,
+A Road,a_road,a_road,8,40,roadtype,x,x,,driveside_a_road,a_road,3,A_RD,,road,14,20,60,1955,"MWAY,B_RD,TOWN",NO_HOUSES,
+Motorway,motorway,motorway,9,45,roadtype,,,,,motorway,4,MWAY,,road,24,24,,1960,"A_RD,B_RD,TOWN","NO_HOUSES,NO_LEVEL_CROSSING",
 Tramway,tramway,tram,10,50,tramtype,,,,,tram,17,RAIL,,tram,10,16,,,ELRL,,
 Electric Tramway,electric_tramway,tram,11,55,tramtype,,,,,tram_elec,17,ELRL,,tram_elec,18,24,,,,CATENARY,tram

@@ -1,3 +1,8 @@
+v1.0.4
+------
+
+- Allow downgrade of motorway/A/B road
+
 v1.0.3
 ------
 
