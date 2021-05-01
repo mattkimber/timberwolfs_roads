@@ -1,8 +1,8 @@
 // Ground and slope tiles
-template ground_tile(x, y, m) { [x*m, (y+8)*m, 64*m, 31*m, -31*m, (m/2)+(m == 1 ? 1 : 0)] }
-template ground_tile_offset(x, y, m,o) { [x*m, (y+8)*m, 64*m, 31*m, (o-31)*m, (m/2)+(m == 1 ? 1 : 0)] }
+template ground_tile(x, y, m) { [x*m, (y+8)*m, 64*m, 31*m, -31*m, (m/2)] }
+template ground_tile_offset(x, y, m,o) { [x*m, (y+8)*m, 64*m, 31*m, (o-31)*m, (m/2)] }
 template ground_tile_slope(x, y, m, o) { [x*m, y*m, 64*m, 39*m, (o-31)*m, (-7*m)-(m/2)] }
-template ground_tile_bridge_slope(x, y, m, o, u, um) { [x*m, y*m, 64*m, 39*m, (o-31)*m, (u-7*m)-(m/2)+(m == 2 ? um : 0)] }
+template ground_tile_bridge_slope(x, y, m, o, u, um) { [x*m, y*m, 64*m, 39*m, (o-31)*m, ((u-7)*m)-(m/2)] }
 
 // 1 direction tile
 template tmpl_1_dir_y_m(y,m) {

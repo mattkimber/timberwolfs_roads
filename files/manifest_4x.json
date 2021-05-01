@@ -4,6 +4,7 @@
   "depth_influence": 0,
   "tiled_normals": true,
   "soften_edges": 0.5,
+  "hard_edge_threshold": 0.25,
   "fade_to_black": false,
   "solid_base": true,
   "sampler": "disc",
