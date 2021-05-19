@@ -14,6 +14,8 @@
     "contrast": 0.1,
     "slice_threshold": 96,
     "slice_length": 96,
+	"max_colour_push": 1,
+	"fosterise": true,
     "size": {
       "x": 86,
       "y": 86,
