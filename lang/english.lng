@@ -1,30 +1,30 @@
 ##grflangid 0x01
 STR_GRF_NAME :Timberwolf's Roads 1.0.6
 STR_GRF_DESCRIPTION :A 2x zoom road set featuring multiple types of road and tramway
-STR_TOOLBAR_ROAD :Sett Road Construction
-STR_TOOLBAR_TOWN :Town Road Construction
-STR_MENU_ELR2 :Town Road (electrified) construction
+STR_TOOLBAR_CONC :Concrete Road Construction
 STR_MENU_A_RD :A Road construction
 STR_TOOLBAR_A_RD :A Road Construction
-STR_TOOLBAR_RAIL :Tramway Construction
-STR_MENU_ELRL :Tramway (electrified) construction
-STR_MENU_ROAD :Sett Road construction
+STR_MENU_B_RD :B Road construction
+STR_TOOLBAR_B_RD :B Road Construction
+STR_TOOLBAR_MWAY :Motorway Construction
+STR_TOOLBAR_ELRL :Tramway (electrified) Construction
+STR_MENU_TOWN :Town Road construction
+STR_MENU_ELR2 :Town Road (electrified) construction
+STR_MENU_MWAY :Motorway construction
 STR_MENU_RAIL :Tramway construction
-STR_MENU_DIRT :Unpaved Track construction
+STR_MENU_ELRL :Tramway (electrified) construction
+STR_MENU_ELRD :Concrete Road (electrified) construction
+STR_TOOLBAR_DIRT :Unpaved Track  Construction
+STR_MENU_ROAD :Sett Road construction
+STR_TOOLBAR_TOWN :Town Road Construction
 STR_MENU_CONC :Concrete Road construction
 STR_TOOLBAR_ELR2 :Town Road (electrified) Construction
-STR_TOOLBAR_B_RD :B Road Construction
-STR_MENU_MWAY :Motorway construction
-STR_TOOLBAR_MWAY :Motorway Construction
 STR_MENU_TMPL :Template Road construction
-STR_TOOLBAR_DIRT :Unpaved Track  Construction
-STR_TOOLBAR_CONC :Concrete Road Construction
-STR_MENU_ELRD :Concrete Road (electrified) construction
-STR_TOOLBAR_ELRD :Concrete Road (electrified) Construction
-STR_MENU_B_RD :B Road construction
-STR_TOOLBAR_ELRL :Tramway (electrified) Construction
 STR_TOOLBAR_TMPL :Template Road Construction
-STR_MENU_TOWN :Town Road construction
+STR_MENU_DIRT :Unpaved Track construction
+STR_TOOLBAR_ELRD :Concrete Road (electrified) Construction
+STR_TOOLBAR_RAIL :Tramway Construction
+STR_TOOLBAR_ROAD :Sett Road Construction
 STR_NAME_SPR_A_ROAD :Sprites
 STR_NAME_SPR_B_ROAD :Sprites
 STR_NAME_SPR_TRACK :Sprites

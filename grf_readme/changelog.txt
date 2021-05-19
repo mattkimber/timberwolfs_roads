@@ -2,6 +2,7 @@ v1.0.6
 ------
 
 - Rendering improvements
+- Better slope alignment in 1x
 
 v1.0.5
 ------

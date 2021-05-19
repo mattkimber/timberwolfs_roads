@@ -41,10 +41,10 @@ template tmpl_4_dir_roadstop_y_m(y,m) {
 
 // 4 directions of slopes
 template tmpl_slope_y_m(y, m) {
-    ground_tile_slope(216, y, m, 1)
-    ground_tile_slope(144, y, m, -1)
-    ground_tile_slope(72, y, m, 1)
-    ground_tile_slope(0, y, m, -1)
+    ground_tile_slope(216, y, m, m == 1 ? 0 : 1)
+    ground_tile_slope(144, y, m, m == 1 ? 0 : -1)
+    ground_tile_slope(72, y, m, m == 1 ? 0 : 1)
+    ground_tile_slope(0, y, m, m == 1 ? 0 : -1)
 }
 
 // 4 directions of bridge slopes
