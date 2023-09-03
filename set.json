@@ -2,7 +2,7 @@
     "grf": {
         "author_id": "TWF",
         "grf_id": 9,
-        "name": "Timberwolf's Roads 1.0.8",
+        "name": "Timberwolf's Roads 1.0.9",
         "description": "A 2x zoom road set featuring multiple types of road and tramway",
         "min_compat_version": 1,
         "filename": "timberwolfs_roads.nml",

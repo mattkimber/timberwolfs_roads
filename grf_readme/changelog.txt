@@ -1,3 +1,13 @@
+v1.0.9
+------
+
+- 2x GUI support
+
+v1.0.8
+------
+
+- More rendering changes
+
 v1.0.7
 ------
 

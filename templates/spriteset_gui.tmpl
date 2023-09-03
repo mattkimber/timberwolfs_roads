@@ -1,5 +1,10 @@
 // Mini Spriteset (underlay only)
 // Underlay
-spriteset({{.spriteset}}_gui, "gui_output/gui_{{.spriteset}}_8bpp.png") {
-    tmpl_gui()
+spriteset({{.spriteset}}_gui, "gui_output/1x/gui_{{.spriteset}}_8bpp.png") {
+    tmpl_gui_1x()
+}
+
+
+alternative_sprites({{.spriteset}}_gui, ZOOM_LEVEL_IN_2X, BIT_DEPTH_8BPP,  "gui_output/2x/gui_{{.spriteset}}_8bpp.png") {
+    tmpl_gui_2x()
 }

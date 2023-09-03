@@ -1,33 +1,49 @@
 // GUI
 // Single icon sprite
-template tmpl_gui_icon(x, y) {
-    [x, y, 20, 20, 0, 0]
+template tmpl_gui_icon(m, x, y) {
+    [x*m, y*m, 20*m, 20*m, 0, 0]
 }
 
 // Single cursor sprite
-template tmpl_gui_big_cursor(x, y) {
-    [x, y, 54, 34, 0, 0]
+template tmpl_gui_big_cursor(m, x, y) {
+    [x*m, y*m, 54*m, 34*m, 0, 0]
 }
 
 // Single cursor sprite
-template tmpl_gui_small_cursor(x, y) {
-    [x, y, 46, 28, 0, 0]
+template tmpl_gui_small_cursor(m, x, y) {
+    [x*m, y*m, 46*m, 28*m, 0, 0]
 }
 
 
 // GUI sprites (8 icons, 8 cursors)
-template tmpl_gui() {
-    tmpl_gui_icon(  0, 0)
-    tmpl_gui_icon( 25, 0)
-    tmpl_gui_icon( 50, 0)
-    tmpl_gui_icon( 75, 0)
-    tmpl_gui_icon(100, 0)
-    tmpl_gui_icon(125, 0)
+template tmpl_gui_1x() {
+    tmpl_gui_icon(1,   0, 0)
+    tmpl_gui_icon(1,  25, 0)
+    tmpl_gui_icon(1,  50, 0)
+    tmpl_gui_icon(1,  75, 0)
+    tmpl_gui_icon(1, 100, 0)
+    tmpl_gui_icon(1, 125, 0)
 
-    tmpl_gui_small_cursor(150, 0)
-    tmpl_gui_small_cursor(200, 0)
-    tmpl_gui_small_cursor(250, 0)
-    tmpl_gui_big_cursor(300, 0)
-    tmpl_gui_big_cursor(400, 0)
-    tmpl_gui_big_cursor(500, 0)
+    tmpl_gui_small_cursor(1, 150, 0)
+    tmpl_gui_small_cursor(1, 200, 0)
+    tmpl_gui_small_cursor(1, 250, 0)
+    tmpl_gui_big_cursor(1, 300, 0)
+    tmpl_gui_big_cursor(1, 400, 0)
+    tmpl_gui_big_cursor(1, 500, 0)
+}
+
+template tmpl_gui_2x() {
+    tmpl_gui_icon(2,   0, 0)
+    tmpl_gui_icon(2,  25, 0)
+    tmpl_gui_icon(2,  50, 0)
+    tmpl_gui_icon(2,  75, 0)
+    tmpl_gui_icon(2, 100, 0)
+    tmpl_gui_icon(2, 125, 0)
+
+    tmpl_gui_small_cursor(2, 150, 0)
+    tmpl_gui_small_cursor(2, 200, 0)
+    tmpl_gui_small_cursor(2, 250, 0)
+    tmpl_gui_big_cursor(2, 300, 0)
+    tmpl_gui_big_cursor(2, 400, 0)
+    tmpl_gui_big_cursor(2, 500, 0)
 }
