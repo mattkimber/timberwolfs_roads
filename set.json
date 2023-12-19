@@ -2,12 +2,67 @@
     "grf": {
         "author_id": "TWF",
         "grf_id": 9,
-        "name": "Timberwolf's Roads 1.0.9",
+        "name": "Timberwolf's Roads 1.0.10",
         "description": "A 2x zoom road set featuring multiple types of road and tramway",
         "min_compat_version": 1,
         "filename": "timberwolfs_roads.nml",
         "language": "english", 
-        "parameters": []
+        "parameters": [
+            {
+                "id": "intro_sett",
+                "name": "Sett Road introduction date",
+                "desc": "Modify the introduction date of sett roads between 0-1850. Note: some vehicle introductions may override this. (default: 1820)",
+                "type": "int",
+                "min_value": 0,
+                "max_value": 1850,
+                "default_value": 1820
+            },
+            {
+                "id": "intro_concrete",
+                "name": "Concrete Road introduction date",
+                "desc": "Modify the introduction date of concrete roads between 1875-1950.  Note: some vehicle introductions may override this for the electrified variant. (default: 1900)",
+                "type": "int",
+                "min_value": 1875,
+                "max_value": 1950,
+                "default_value": 1900
+            },
+            {
+                "id": "intro_town",
+                "name": "Town Road introduction date",
+                "desc": "Modify the introduction date of tarmac town roads between 1915-1970 (default: 1950)",
+                "type": "int",
+                "min_value": 1915,
+                "max_value": 1970,
+                "default_value": 1950
+            },
+            {
+                "id": "intro_b_road",
+                "name": "B Road introduction date",
+                "desc": "Modify the introduction date of tarmac B roads between 1915-1970 (default: 1935)",
+                "type": "int",
+                "min_value": 1915,
+                "max_value": 1970,
+                "default_value": 1935
+            },
+            {
+                "id": "intro_a_road",
+                "name": "A Road introduction date",
+                "desc": "Modify the introduction date of tarmac A roads between 1930-1980 (default: 1955)",
+                "type": "int",
+                "min_value": 1930,
+                "max_value": 1980,
+                "default_value": 1955
+            },
+            {
+                "id": "intro_m_way",
+                "name": "Motorway introduction date",
+                "desc": "Modify the introduction date of motorways between 1935-1995 (default: 1960)",
+                "type": "int",
+                "min_value": 1935,
+                "max_value": 1995,
+                "default_value": 1960
+            }
+        ]
     },
     "static_templates": [
         {
